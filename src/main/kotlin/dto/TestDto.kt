@@ -1,6 +1,6 @@
 package dto
 
-data class TestDto constructor (val name: String, val age: Int) {
+class TestDto constructor (val name: String, val age: Int) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
@@ -13,9 +13,7 @@ data class TestDto constructor (val name: String, val age: Int) {
         return true
     }
 
-    override fun hashCode(): Int {
-        var result = name.hashCode()
-        result = 31 * result + age
-        return result
+    override fun toString(): String {
+        return "TestDto(name='$name', age=$age)"
     }
 }
