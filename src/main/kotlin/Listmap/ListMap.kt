@@ -36,7 +36,14 @@ fun main() {
     //가변 가능 mutableMap
     val mutableMap = mutableMapOf(1 to "test", 2 to "test2")
     mutableMap.put(3, "test3")
-    print("mutableMap : $mutableMap")
+    println("mutableMap : $mutableMap")
+
+    /**
+     * Travers a map or a list of pairs
+     */
+    for ((key, value) in map) {
+        println("key : $key value : $value ")
+    }
 
 
 
