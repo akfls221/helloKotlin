@@ -1,3 +1,5 @@
+@file:JvmName("AbstractStudyKt")
+
 package abstractandinterface
 
 fun main() {
@@ -7,6 +9,7 @@ fun main() {
     abstract.sleep()
     abstract.displayInfo()
     abstract.childFun()
+    println("추상 클래스 프로퍼티 초기화 : ${abstract.address}")
 
 }
 
