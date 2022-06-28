@@ -44,6 +44,7 @@ fun main() {
      * 이를 가능하게 하는 키워드가 바로 out 임.
      * 즉 이에 A는 B를 상속받으면서 Class<A> 가 Class<B>를 상속받게 되는 것임.
      * 공변성을 가지게 되면, out 키워드를 넣어준 파라미터 타입은 Nothing 타입을 write 해주길 바람. 그 이유는 공변성을 가지게 되면 read만 가능하고 write가 불가능 해지기 때문임.
+     * *Nothing Type : 어떠한 값도 포함하지 않는 type
      * 이를 반대로 wirte는 가능 read는 불가능하게 하는 것을 in으로 사용함.
      */
     // 위 예제 Array<T> 를 Array<out T>를 사용하여 공변성을 적용해봄
