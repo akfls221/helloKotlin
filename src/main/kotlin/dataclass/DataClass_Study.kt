@@ -21,6 +21,7 @@ fun main() {
 
     println("this is hashCode : ${equalUser1.hashCode()}")
 
+
 }
 
 data class User(val name: String, val int: Int) {
