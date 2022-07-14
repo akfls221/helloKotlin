@@ -5,6 +5,8 @@ package dataclass
  * 데이터 보관을 목적으로 사용하는 클래스
  * 프로퍼티에 대한 getter(), setter(), equals(), hashCode(), toString(), copy(), component() 메소드를 컴파일 시점에 자동으로 생성한다.(Lombok의 역할)
  * class 앞에 data를 붙여 정의함.
+ *
+ * @@추가 : 프로퍼티를 val로 줄 경우 setter는 생성되지 않고 getter만 생성됨.  > 프로퍼티 값을 수정하려 하면 에러가 발생함.
  */
 fun main() {
     val user = User("taekown", 29)
